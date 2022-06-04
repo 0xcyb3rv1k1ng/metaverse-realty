@@ -23,9 +23,9 @@ contract MetaverseRealtyNFT is ERC721URIStorage {
   function mint(string memory _tokenURI) public {
     _tokenIds.increment();
     uint256 newTokenId = _tokenIds.current();
-    _safeMint(msg.sender, newTokenId);
+    _safeMint(msg.sender, newTokenId); // mints the token
     _setTokenURI(newTokenId, _tokenURI);
     setApprovalForAll(marketplaceContract, true); // requires approval for transfer of ownership between addresses
-    emit NFTMinted(newTokenId);
+    emit NFTMinted(newTokenId); // allows access to info
   }
 }

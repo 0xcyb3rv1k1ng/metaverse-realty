@@ -1,6 +1,10 @@
 
-var SimpleStorage = artifacts.require("SimpleStorage");
+var MetaverseRealtyNFT = artifacts.require("MetaverseRealtyNFT");
+var Marketplace = artifacts.require("Marketplace");
 
-module.exports = function(deployer) {
-  deployer.deploy(SimpleStorage);
-};
+// Must deploy Marketplace contract before NFT contract
+module.exports = async function(deployer) {
+  await deployer.deploy(Marketplace);
+  const marketplace = await Marketplace.deployed();
+  await deployer.deploy(MetaverseRealtyNFT, marketplace.address);
+}
