@@ -1,9 +1,10 @@
+// Brings in the contracts
 var MetaverseRealtyNFT = artifacts.require("MetaverseRealtyNFT");
 var Marketplace = artifacts.require("Marketplace");
 
 async function logNftLists(marketplace) {
     let listedNfts = await marketplace.getListedNfts.call()
-    const accountAddress = '0x59469af4d18f6B602daBc2538e2072d5fE12602a'
+    const accountAddress = '0x59469af4d18f6B602daBc2538e2072d5fE12602a' // from Ganache
     let myNfts = await marketplace.getMyNfts.call({from: accountAddress})
     let myListedNfts = await marketplace.getMyListedNfts.call({from: accountAddress})
     console.log(`listedNfts: ${listedNfts.length}`)
@@ -16,6 +17,7 @@ const main = async (cb) => {
     const metaverseRealty = await MetaverseRealtyNFT.deployed()
     const marketplace = await Marketplace.deployed()
 
+    // Call the different functions
     console.log('MINT AND LIST 3 NFTs')
     let listingFee = await marketplace.getListingFee()
     listingFee = listingFee.toString()
@@ -43,7 +45,7 @@ const main = async (cb) => {
     await logNftLists(marketplace)
 
   } catch(err) {
-    console.log('Doh! ', err);
+    console.log('Oops! ', err);
   }
   cb();
 }

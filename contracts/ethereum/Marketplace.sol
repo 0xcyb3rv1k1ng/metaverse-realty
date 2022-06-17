@@ -12,7 +12,7 @@ contract Marketplace is ReentrancyGuard {
   uint256 public LISTING_FEE = 0.0001 ether; // Allows fee to go from seller to contract owner upon sale of NFT.
   address payable private _marketOwner; // Stores address of contract owner that will receive listing fee.
   mapping(uint256 => NFT) private _idToNFT; // Unique tokenId paired with NFT struct
-  // Stores infor for each NFT being listed
+  // Stores info for each NFT being listed
   struct NFT {
     address nftContract;
     uint256 tokenId;
@@ -38,6 +38,8 @@ contract Marketplace is ReentrancyGuard {
     uint256 price
   );
 
+// _marketOwner is whoever is deploying the contract
+// Payable gives access to be able to do transfer of value
   constructor() {
     _marketOwner = payable(msg.sender);
   }
@@ -45,8 +47,8 @@ contract Marketplace is ReentrancyGuard {
   // This function will alter state
   // List the NFT on the marketplace
   function listNft(address _nftContract, uint256 _tokenId, uint256 _price) public payable nonReentrant {
-    require(_price > 0, "Price must be at least 1 wei");
-    require(msg.value == LISTING_FEE, "Not enough ether for listing fee");
+    require(_price > 0, "Price must be at least 1 wei"); // Price will fail if price is not greater than 0.
+    require(msg.value == LISTING_FEE, "Not enough ether for listing fee"); // Must have enough ETH or it will fail
 
     IERC721(_nftContract).transferFrom(msg.sender, address(this), _tokenId);
 
