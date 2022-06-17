@@ -17,6 +17,7 @@ contract MetaverseRealtyNFT is ERC721URIStorage {
   // the transaction logs. Will need to grab tokenId.
   event NFTMinted(uint256); 
 
+  // A constrcutor to get the address of the marketplace contract.
   constructor(address _marketplaceContract) ERC721("Metaverse Realty Digital Properties", "MRDP") {
     marketplaceContract = _marketplaceContract;
   }
