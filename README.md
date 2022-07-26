@@ -1,14 +1,21 @@
 Metaverse Realty NFT Marketplace
 
 The following steps will walk through how to setup the project. 
+<p>
 SETUP
+ <p>
  1)	Open Ganache
+  <p>
     A)	Click Create New Project and name the project.
+   <p>
     B)	Confirm it is working by viewing the addresses
+    <p>
 2)	Open VS Code
+     <p>
    A)	Switch directories to the correct directory. In this example it would be: 'cd mvr'. From mvr folder run: 
       'truffle migrate --network development'
       This will deploy the smart contract to Truffle.
+      <p>
    B)	Open a new terminal
       Switch directories by using cd mvr and cd client
    C)	Deploy the front end
