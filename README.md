@@ -28,8 +28,8 @@ ACTIONS
 The following steps will show how to use the dApp once it is uploaded.
 
 SELL NFT
- 1)	Click ‘Sell a new NFT’
-    A)	Enter Asset Name (e.g. Park Place)
+ 1)	Click ‘Sell a new NFT’ <p>
+    A)	Enter Asset Name (e.g. Park Place) <p>
     B)	Enter Asset Description
        1.	Sample Description:
           Small (S) parcel in the Purple Property District has a size of 1.8 m² and is located at X = 748 and Y = 536.
