@@ -1,62 +1,62 @@
 Metaverse Realty NFT Marketplace
-
-The following steps will walk through how to setup the project. 
-SETUP
- 1)	Open Ganache
-    A)	Click Create New Project and name the project.
-    B)	Confirm it is working by viewing the addresses
-2)	Open VS Code
-   A)	Switch directories to the correct directory. In this example it would be: 'cd mvr'. From mvr folder run: 
-      'truffle migrate --network development'
-      This will deploy the smart contract to Truffle.
-   B)	Open a new terminal
-      Switch directories by using cd mvr and cd client
-   C)	Deploy the front end
-   D)	From the terminal, run: npm run dev [from client folder]
-3)	Go to localhost:3000
-   A)	Note: that it will be blank the first time loading in since no NFTs have been listed.
-   B) NFTs can show if there have been NFTs previously uploaded and it is on the same network.
-
-ACTIONS
-The following steps will show how to use the dApp once it is uploaded.
-
-SELL NFT
- 1)	Click ‘Sell a new NFT’
-    A)	Enter Asset Name (e.g. Park Place)
-    B)	Enter Asset Description
-       1.	Sample Description:
-          Small (S) parcel in the Purple Property District has a size of 1.8 m² and is located at X = 748 and Y = 536.
-    C)	Enter price in ETH (e.g. 0.0005)
-    D)	Select Image from file.
-    E)	Click ‘Mint and list NFT’
-       1.	Wait for MetaMask to pop up. 
-       2.	Scroll down and click ‘Confirm’
-       3.	Wait for it to go through and receive confirmation.
-       4.	Scroll down and click ‘Confirm’
-       5.	Wait for website to reload with newly listed NFT.
-
-BUY NFT
-1)	Click ‘Buy’ to purchase an NFT. 
-2)	Wait for MetaMask to pop up. 
-A)	Scroll down and click ‘Confirm’
-3)	Wait for confirmation of the transaction.
-4)	Click ‘My NFTs’ to view the purchased NFT.
-
-RESELL NFT
-1)	Click ‘List’.
-2)	Enter price in ETH.
-3)	Click ‘List NFT’
-4)	MetaMask should pop up
-5)	Scroll down and click ‘Confirm’
-6)	Wait for successful transaction
-7)	Website should reload to the homepage.
-
-MY LISTED NFTs
-1)	Click ‘My Listed NFTs’ to show it works.
-2)	All NFTs should be the same as the home page since I listed them all.
-
-Below is the chart used to create the NFTs. This is just meant for example purposes and does not reflect an accurate or the realistic value of ETH in relation to the USD.
-
+<p>
+The following steps will walk through how to setup the project. <p>
+SETUP <p>
+ 1)	Open Ganache <p>
+    A)	Click Create New Project and name the project. <p>
+    B)	Confirm it is working by viewing the addresses. <p>
+2)	Open VS Code <p>
+   A)	Switch directories to the correct directory. In this example it would be: 'cd mvr'. From mvr folder run: <p>
+      'truffle migrate --network development' <p>
+      This will deploy the smart contract to Truffle. <p>
+   B)	Open a new terminal <p>
+      Switch directories by using cd mvr and cd client <p>
+   C)	Deploy the front end <p>
+   D)	From the terminal, run: npm run dev [from client folder] <p>
+3)	Go to localhost:3000 <p>
+   A)	Note: that it will be blank the first time loading in since no NFTs have been listed. <p>
+   B) NFTs can show if there have been NFTs previously uploaded and it is on the same network. <p>
+<p>
+ACTIONS <p>
+The following steps will show how to use the dApp once it is uploaded. <p>
+<p>
+SELL NFT <p>
+ 1)	Click ‘Sell a new NFT’ <p>
+    A)	Enter Asset Name (e.g. Park Place) <p>
+    B)	Enter Asset Description <p>
+       1.	Sample Description: <p>
+          Small (S) parcel in the Purple Property District has a size of 1.8 m² and is located at X = 748 and Y = 536. <p>
+    C)	Enter price in ETH (e.g. 0.0005) <p>
+    D)	Select Image from file. <p>
+    E)	Click ‘Mint and list NFT’ <p>
+       1.	Wait for MetaMask to pop up.  <p>
+       2.	Scroll down and click ‘Confirm’. <p>
+       3.	Wait for it to go through and receive confirmation. <p>
+       4.	Scroll down and click ‘Confirm’ <p>
+       5.	Wait for website to reload with newly listed NFT. <p>
+<p>
+BUY NFT <p>
+1)	Click ‘Buy’ to purchase an NFT. <p>
+2)	Wait for MetaMask to pop up. <p>
+A)	Scroll down and click ‘Confirm’ <p>
+3)	Wait for confirmation of the transaction. <p>
+4)	Click ‘My NFTs’ to view the purchased NFT. <p>
+<p>
+RESELL NFT <p>
+1)	Click ‘List’. <p>
+2)	Enter price in ETH. <p>
+3)	Click ‘List NFT’ <p>
+4)	MetaMask should pop up <p>
+5)	Scroll down and click ‘Confirm’ <p>
+6)	Wait for successful transaction <p>
+7)	Website should reload to the homepage. <p>
+<p>
+MY LISTED NFTs <p>
+1)	Click ‘My Listed NFTs’ to show it works. <p>
+2)	All NFTs should be the same as the home page since I listed them all. <p>
+<p>
+Below is the chart used to create the NFTs. This is just meant for example purposes and does not reflect an accurate or the realistic value of ETH in relation to the USD. <p>
+<p>
 | Parcel # | Name                    | Property District | Location  | Size   | Parcel Size | Cost    | ETH      | X-Coordinate | Y-Coordinate |    
 | -------- | ----------------------- | ----------------- | --------- | ------ | ----------- | ------  | -------- | ------------ | ------------ |
 | 1        | Interstate              | None              | 748, 751  | Medium | 2.8m^2      | $5,000  | 0.05     | 748          | 751          |
