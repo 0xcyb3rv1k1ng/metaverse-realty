@@ -55,7 +55,7 @@ MY LISTED NFTs <p>
 1)	Click ‘My Listed NFTs’ to show it works. <p>
 2)	All NFTs should be the same as the home page since I listed them all. <p>
 <p>
-Below is the chart used to create the NFTs. This is just meant for example purposes and does not reflect an accurate or the realistic value of ETH in relation to the USD. <p>
+Below is the chart used to create the NFTs. This is just meant for example purposes and does not reflect an accurate or the realistic value of ETH in relation to the USD. 
 <p>
 | Parcel # | Name                    | Property District | Location  | Size   | Parcel Size | Cost    | ETH      | X-Coordinate | Y-Coordinate |    
 | -------- | ----------------------- | ----------------- | --------- | ------ | ----------- | ------  | -------- | ------------ | ------------ |
